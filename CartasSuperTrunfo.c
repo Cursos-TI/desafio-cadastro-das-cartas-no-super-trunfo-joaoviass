@@ -30,9 +30,12 @@ int main() {
     printf("Numeros de pontos turísticos: \n");
     scanf("%d", &pontos_turisticos);
 
+    float densidade = populacao / area; //CALCULANDO A DENSIDADE
+    float pibpercap = pib / populacao; //CALCULANDO O PIB PERCAPITA
+
 //ACIMA PEDI PARA A PESSOA COLOCAR AS IND=FORMAÇÕES NECESSARIAS PARA CADASTRAR A CARTA
 
-    printf("\nCarta 1:\n");
+    printf("\n Carta 1: \n");
     printf("Estado: %c\n", estado);
     printf("Código: %s\n", codigo);
     printf("Código da carta:");
@@ -40,9 +43,11 @@ int main() {
     printf("%s\n", codigo);
     printf("Cidade: %s\n", nome);
     printf("População: %d\n", populacao);
-    printf("Área: %f\n", area);
-    printf("PIB: %f\n", pib);
+    printf("Área: %2.f Km2 \n", area);
+    printf("PIB: %2.f Bilhões \n", pib);
     printf("Pontos turísticos: %d\n", pontos_turisticos);
+    printf("Densidade Populacional: %2.f\n", densidade);
+    printf("PIB per Capita: %2.f\n", pibpercap);
 
     char codigoC2[4]; //APENAS ADICIONEI O C2 A FRENTE DE CADA VARIAVEL PARA CRIAR A CARTA 2
     char nomeC2[50];
@@ -73,6 +78,9 @@ int main() {
     printf("Numeros de pontos turísticos: \n");
     scanf("%d", &pontos_turisticosC2);
 
+    float densidadeC2 = populacaoC2 / areaC2;
+    float pibpercapc2 = pibC2 / populacaoC2;
+
     printf("\nCarta 2:\n");
     printf("Estado: %c\n", estadoC2);
     printf("Código: %s\n", codigoC2);
@@ -81,9 +89,11 @@ int main() {
     printf("%s\n", codigoC2);
     printf("Cidade: %s\n", nomeC2);
     printf("População: %d\n", populacaoC2);
-    printf("Área: %f\n", areaC2);
-    printf("PIB: %f\n", pibC2);
+    printf("Área: %2.f km2 \n", areaC2);
+    printf("PIB: %2.f Bilhões \n", pibC2);
     printf("Pontos turísticos: %d\n", pontos_turisticosC2);
+    printf("Densidade Populacional: %2.f\n", densidadeC2);
+    printf("PIB per Capita: %2.f\n", pibpercapc2);
 
     return 0;
 }

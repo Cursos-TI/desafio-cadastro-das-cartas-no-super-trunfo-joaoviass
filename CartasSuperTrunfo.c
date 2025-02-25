@@ -32,7 +32,7 @@ int main() {
 
     long double densidade = populacao / area; //CALCULANDO A DENSIDADE
     long double pibpercap = pib / populacao; //CALCULANDO O PIB PERCAPITA
-    float superpoder = populacao + area + pib + pontos_turisticos + pibpercap + (2 / densidade );
+    float superpoder = populacao + area + pib + pontos_turisticos + pibpercap + ( 1 / densidade );
 
 //ACIMA PEDI PARA A PESSOA COLOCAR AS IND=FORMAÇÕES NECESSARIAS PARA CADASTRAR A CARTA
 
@@ -82,7 +82,7 @@ int main() {
 
     long double densidadeC2 = populacaoC2 / areaC2;
     long double pibpercapc2 = pibC2 / populacaoC2;
-    float superpoderC2 = populacaoC2 + areaC2 + pibC2 + pontos_turisticosC2 + pibpercapc2 + (2 / densidadeC2 );
+    float superpoderC2 = populacaoC2 + areaC2 + pibC2 + pontos_turisticosC2 + pibpercapc2 + ( 1 / densidadeC2 );
 
     printf("\nCarta 2:\n");
     printf("Estado: %c\n", estadoC2);
